@@ -15,8 +15,8 @@ import numpy
 import scipy
 import scipy.optimize as optimize
 import scipy.misc
-from gp.fast_cholesky import fast_cholesky_invert
-from gp.covarianceClass import covarianceError
+from flexgp.fast_cholesky import fast_cholesky_invert
+from flexgp.covarianceClass import covarianceError
 _LOGTWOPI= numpy.log(2.*numpy.pi)
 def trainGP(trainingSet,covar,mean=None,filename=None,ext='h5',
             useDerivs=True,fix=None):
@@ -43,7 +43,7 @@ def trainGP(trainingSet,covar,mean=None,filename=None,ext='h5',
     """
     #Put in dummy mean if mean is None
     if mean is None:
-        from gp.zeroMean import meanFunc
+        from flexgp.zeroMean import meanFunc
         mean= meanFunc()
         noMean= True
     else: noMean= False

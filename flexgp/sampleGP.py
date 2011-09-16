@@ -33,7 +33,7 @@ def sampleGP(trainingSet,covar,mean=None,nsamples=100,
     """
     #Put in dummy mean if mean is None
     if mean is None:
-        from gp.zeroMean import meanFunc
+        from flexgp.zeroMean import meanFunc
         mean= meanFunc()
         noMean= True
         out= [covar]

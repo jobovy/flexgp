@@ -1,5 +1,5 @@
 import scipy
-from gp.covarianceClass import *
+from flexgp.covarianceClass import *
 _MAXH= 10.
 class covarFunc (covariance):
     """

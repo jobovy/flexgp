@@ -1,5 +1,5 @@
 import scipy
-from gp.meanClass import *
+from flexgp.meanClass import *
 class meanFunc (mean):
     """constoMean: mean function for a GP with zero mean"""
     def __init__(self,m=0.,**kwargs):
