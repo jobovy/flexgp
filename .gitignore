@@ -36,3 +36,9 @@ Thumbs.db
 
 #
 *~
+
+# Build directories #
+#####################
+build/
+dist/
+flexgp.egg-info/
